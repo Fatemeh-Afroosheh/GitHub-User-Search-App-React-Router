@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(227, 84, 108);
+  color: white;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo {
+  font-size: large;
+  font-weight: bold;
+  margin-left: 70px;
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* search users */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form > p {
+  align-items: center;
+  border: 1px solid #333;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 14%;
+  padding: 5px;
+  margin: 80px auto 0px;
+  color: red;
+}
+
+form > input {
+  margin: 30px auto 0;
+  width: 80%;
+  padding: 10px;
+}
+
+form > input:focus {
+  outline: 0.5px solid #333;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+}
+
+form button {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  font-size: large;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* users */
+
+.users-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.users {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 130px;
+}
+
+.users-wrapper h2 {
+  margin-bottom: 30px;
+}
+
+.user img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.users li {
+  border: 1px solid gray;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.users li h2 {
+  margin-top: 10px;
+}
+
+.users li button {
+  width: 40%;
+  padding: 5px;
+  margin: 0 auto;
+  background-color: #333;
+  color: white;
+  font-size: small;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(59, 58, 58, 0.473);
+  font-size: large;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: auto;
+}
+
+/* loading */
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
