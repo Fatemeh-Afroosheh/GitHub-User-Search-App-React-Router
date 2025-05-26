@@ -46,25 +46,7 @@ A powerful and user-friendly React web application that allows users to search f
 
 ---
 
-## 📂 Project Structure
-my-github-search-app/
-src/
-│
-├── components/
-│ ├── home/ # Form, Users, and Loading components
-│ ├── showMoreUser/ # Repos, Hairable, and SingleUser components
-│ └── UI/ # Header and Footer
-│
-├── pages/
-│ ├── Home.jsx # Main page for search and user results
-│ ├── AboutUs.jsx
-│ ├── ConnectUs.jsx
-│ ├── ShowMoreUser.jsx # Displays detailed info for selected user
-│ └── NotFound.jsx
-│
-├── App.jsx # Root component
-├── index.js # Entry point with BrowserRouter
-└── index.css # Main stylesheet
+
 
 ## 📦 Getting Started
 
