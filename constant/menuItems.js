@@ -1,23 +1,18 @@
 const menuItems = [
   {
     id: 1,
-    href: "https://www.google.co.uk/",
+    href: "/",
     menuItem: "Home",
   },
   {
     id: 2,
-    href: "https://www.google.co.uk/",
-    menuItem: "About",
+    href: "/about-us",
+    menuItem: "About Us",
   },
   {
     id: 3,
-    href: "https://www.google.co.uk/",
-    menuItem: "Contect us",
-  },
-  {
-    id: 4,
-    href: "https://www.google.co.uk/",
-    menuItem: "Our Team",
+    href: "/connect-us",
+    menuItem: "Connect With Us",
   },
 ];
 export default menuItems;

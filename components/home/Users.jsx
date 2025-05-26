@@ -7,7 +7,7 @@ const Users = ({ users }) => {
         <h2>Users</h2>
         <ul className="users">
           {users?.map((user) => (
-            <UserList user={user} />
+            <UserList user={user} key={user?.id} />
           ))}
         </ul>
       </section>

@@ -1,4 +1,6 @@
-import menuItems from "../constant/menuItems";
+import { Link } from "react-router-dom";
+import menuItems from "../../constant/menuItems";
+
 const Header = () => {
   return (
     <header>
@@ -6,7 +8,7 @@ const Header = () => {
       <ul className="menu">
         {menuItems.map((item) => (
           <li key={item.id}>
-            <a href={item.href}>{item.menuItem}</a>
+            <Link to={item.href}>{item.menuItem}</Link>
           </li>
         ))}
       </ul>
