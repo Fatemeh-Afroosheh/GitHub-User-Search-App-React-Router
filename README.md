@@ -47,7 +47,7 @@ A powerful and user-friendly React web application that allows users to search f
 ---
 
 ## 📂 Project Structure
-
+my-github-search-app/
 src/
 │
 ├── components/
